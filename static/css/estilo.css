@@ -1,0 +1,32 @@
+label {
+	font-weight: bold;
+}
+
+p {
+	padding-top: 7px;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+
+.class_data {
+	color: red;
+}
+
+.class_title {
+	font-weight: bold;
+	margin: 0px 20px 0px 0px;
+}
+
+.central {
+	text-align: center;
+}
+
+.title_aviso {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 20px 0px 20px 0px;
+}

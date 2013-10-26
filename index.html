@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<!--<meta http-equiv="refresh" content="30"/>-->
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+	<title>Exercício</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<link rel="stylesheet" href="static/css/estilo.css"/>
+</head>
+<body>
+
+	<div data-role="page" id="page1">
+		<div data-role="header">
+			<h1>Agenda de compromissos</h1>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true" data-theme="c" id="listFuncoes">
+				<li data-role="list-divider">Agenda</li>
+				<li data-icon="plus"><a href="#page2">Adicionar compromisso</a></li>
+				<li><a href="#page3" id="linkComp">Compromissos</a></li>
+				<li><a href="#page4" id="linkCompDia">Compromissos do dia</a></li>
+				<li data-icon="delete"><a href="#aviso" data-rel="dialog" data-transition="pop" id="removeAll">Remover compromissos</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" class="footer">
+			<h1>Autor: Bruno Ferreira da Costa</h1>
+		</div>
+	</div>
+
+	<div data-role="page" id="page2">
+		<div data-role="header" >
+			<h1>Agenda de compromissos</h1>
+		</div>
+		<div data-role="content">
+			<label for="username">Título:</label>
+			<input type="text" id="titulo" placeholder="Username" data-clear-btn="true"/>
+			<label for="text">Descrição:</label>
+			<textarea id="texto" placeholder="texto"></textarea>
+			<label for="date">Data e hora:</label>
+			<input type="datetime-local" name="data" id="data"/>
+		</div>
+		<div data-role="footer" class="footer">
+			<a href="#page1" data-icon="back" data-theme="b">Voltar</a>
+			<a href="#" data-icon="check" data-theme="b" class="ui-btn-right" id="btn_cadastro">Salvar</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="page3">
+		<div data-role="header">
+			<h1>Agenda de compromissos</h1>
+		</div>
+		<div data-role="content">
+			<label for="search"></label>
+			<ul data-role="listview" data-inset="true" data-filter="true" data-split-theme="d" data-split-icon="delete" id="listComp">
+			</ul>
+		</div>
+		<div data-role="footer" class="footer">
+			<div data-role="footer" class="footer">
+				<a href="#page1" data-icon="back" data-theme="b">Voltar</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="page4">
+		<div data-role="header">
+			<h1>Agenda de compromissos</h1>
+		</div>
+		<div data-role="content">
+			<label for="search"></label>
+			<ul data-role="listview" data-inset="true" data-filter="true" data-split-theme="d" data-split-icon="delete" id="listCompDia">
+			</ul>
+		</div>
+		<div data-role="footer" class="footer">
+			<div data-role="footer" class="footer">
+				<a href="#page1" data-icon="back" data-theme="b">Voltar</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="aviso">
+ 		<div data-role="header" data-theme="b">
+  			<h1>Aviso</h1>
+ 		</div>
+ 		<div data-role="content" class="central">
+  			<div class="title_aviso" id="title_aviso"></div>
+  			<a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="b" id="cancel">Cancela</a>
+  			<a href="#" data-role="button" data-inline="true" id="ok">Confirma</a>
+ 		</div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	<script src="static/js/script.js"></script>
+
+</body>
+</html>
