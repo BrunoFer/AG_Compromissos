@@ -5,7 +5,7 @@
 	<!--<meta http-equiv="refresh" content="30"/>-->
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
 	<title>Exercício</title>
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<link rel="stylesheet" href="static/css/jquery.mobile-1.3.2.min.css" />
 	<link rel="stylesheet" href="static/css/estilo.css"/>
 </head>
 <body>
@@ -19,8 +19,6 @@
 				<li data-role="list-divider">Agenda</li>
 				<li data-icon="plus"><a href="#page2">Adicionar compromisso</a></li>
 				<li><a href="#page3" id="linkComp">Compromissos</a></li>
-				<li><a href="#page4" id="linkCompDia">Compromissos do dia</a></li>
-				<li data-icon="delete"><a href="#aviso" data-rel="dialog" data-transition="pop" id="removeAll">Remover compromissos</a></li>
 			</ul>
 		</div>
 		<div data-role="footer" class="footer">
@@ -62,22 +60,6 @@
 		</div>
 	</div>
 
-	<div data-role="page" id="page4">
-		<div data-role="header">
-			<h1>Agenda de compromissos</h1>
-		</div>
-		<div data-role="content">
-			<label for="search"></label>
-			<ul data-role="listview" data-inset="true" data-filter="true" data-split-theme="d" data-split-icon="delete" id="listCompDia">
-			</ul>
-		</div>
-		<div data-role="footer" class="footer">
-			<div data-role="footer" class="footer">
-				<a href="#page1" data-icon="back" data-theme="b">Voltar</a>
-			</div>
-		</div>
-	</div>
-
 	<div data-role="page" id="aviso">
  		<div data-role="header" data-theme="b">
   			<h1>Aviso</h1>
@@ -89,8 +71,8 @@
  		</div>
 	</div>
 
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	<script src="static/js/jquery-1.9.1.min.js"></script>
+	<script src="static/js/jquery.mobile-1.3.2.min.js"></script>
 	<script src="static/js/script.js"></script>
 
 </body>
